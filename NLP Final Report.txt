@@ -1,0 +1,175 @@
+Individual Report on Project (41): IDENTIFYING ACTION ITEMS IN EMAIL
+email address: RATHNAKA@USC.EDU
+Rest of my group: SHRIRAM KALPATHY MOHAN
+Name of the Bitbucket repository for your group's project: INSERT NAME HERE
+
+Instructions
+
+In the above header, replace ALL CAPS entries with your
+information. You can find your group number in the presentation
+schedule or in the copy of your proposal that we sent you. Fill in the
+sections below. If you need to cite a reference, please use APA style
+or similar (https://owl.english.purdue.edu/owl/resource/560/03/). For
+the references section, please follow a standard style such as APA
+(https://owl.english.purdue.edu/owl/resource/560/06/).
+
+This report should be written by you individually (NOT shared among
+the group members). The section Project Resources should list any
+software or data that you downloaded and used in your
+assignment. Below are two samples (one for data and one for
+software). Please delete them and replace with your own. In general,
+this report should be written individually. The one exception is that
+you may compile a single list of Project Resources to share.
+
+1. Project Overview
+	Our project goal was to extract all action items from an email for a particular receiver. Action items are those tasks which are to be performed by the reciever in a specified time period. Especially, in meetings, the summary or minutes of meeting report will contain all the action items to be performed by respective recipients. In our project, we extract three different components from each sentence in the email : Email description, Owner and timeframe. 
+
+	The methodology that we followed was :
+	Collected emails from two sources- personal email and enron email set. Then, preprocessed the emails to remove unwanted components like : From, To Subject, Salutation etc. The preprocessed emails are then tokenized to extract each sentence using the NLTK toolkit. Then each word is assigned POS tags again using the POS tagging from NLTK.
+
+
+
+
+2. My Project Tasks
+
+
+
+3. Project Resources
+
+* Our training and test data were drawn from item 72 of the NLTK data
+repository (http://www.nltk.org/nltk_data/) which is a 10% sample of
+the Penn Treebank.
+
+* We used a chart parser from NLTK (http://www.nltk.org/install.html).
+
+4. References 
+
+
+
+5. Review 1 
+
+The group number was: 23
+
+What was the goal of the group's project?
+	To build a Named Entity Recognition system for tweets using simplified components.
+
+How did the group attempt to accomplish the goal?
+	The features used were: POS tags, querying the DBpedia dataset, Word2Vec, Labelled LDA.
+	The group followed two approaches : 
+		a) Segmenting and classifying named entities simultaneously. Recognize all different types of NER using features except LLDA.
+		b) Segmenting first and then classifying. Use all features to recognize that a chunk is a Named Entity and use LLDA to label each chunk.
+
+How did the group evaluate their work and what was the result?
+	The work was evaluated with LLDA and without LLDA For various components like : Company, Facility, Geo-loc, Person
+	Approach 1 has much better performance than baseline(0.04), whereas Approach2 has lower performance than baseline.
+
+6. Review 2
+
+The group number was: 29
+
+What was the goal of the group's project?
+	 Conversion of lecture videos into text. This enables students to search for keywords in the text instead of going throught the entire video.
+
+How did the group attempt to accomplish the goal?
+	Using Acoustic models (CMU and HTK ) to generate text from videos and transcripts. Constraints are applied on the training data and using the acoustic model , features are extracted. Also using Language models and the extracted features, the text is decoded.
+
+How did the group evaluate their work and what was the result?
+	By comparing results using adaption v/s actual training of acoustic models. 
+	Perplexity of CMU bigram is greator than that of CMU Trigram
+	Perplexity of HTK bugram is greator than that of HTK trigram
+
+7. Review 3
+
+The group number was: 2
+
+What was the goal of the group's project?
+Automated grading for short answers.
+
+How did the group attempt to accomplish the goal?
+The data is preprocessed and using various methods like Feature engineering, Feature selection and model training , the Final model is generated. Feature engineering includes Term usage, Sentence quality , bag of words and Content fluency. Feature selection removes those features which have lesser effect on the output. Various machine learning techniques like Naive Bayes, K-nearest neighbours, Random Forest etc were used for building the model.
+
+How did the group evaluate their work and what was the result?
+The group used Machine learning techniques to evaluate the Kappa values found out by inter-annotator agreement. All the 8 machine learning techniques were evaluated against 10 Essay sets and each set had different performance value for each of the techniques.
+
+8. Review 4
+
+The group number was: 12
+
+What was the goal of the group's project?
+	To learn a probabilistic context free grammar from a corpus using Iterarive Biclustering
+
+How did the group attempt to accomplish the goal?
+	The Brown corpus is preprocessed(also includes adding POS tags). Bigram features are used to create rules and bigram with highest value is used to create a new rule. Keep iterating to find a good set of rules. A cost function is used to find total rule cost of all sentences. CKY Algorithm is used for all these steps.
+
+How did the group evaluate their work and what was the result?
+	All the evaluations are compared to the results from the Brown Corpus. Since Brown has many long sentences, it is difficult to reduce to simple rules hence the performance measure is very low. however for Basic reading and intermediate reading the result are around 51%.
+
+9. Review 5
+
+The group number was: 28
+
+What was the goal of the group's project?
+	Sentiment Analysis of yelp Reviews
+
+How did the group attempt to accomplish the goal?
+	Firstly data was preprocessed using techniques like removal of stop words, POS tagging. Then features are selected using Bag of words, Bigrams etc. Parse trees are created and chunks are extracted from it. The polarity of the chunks are decided through a tool called SentiWordNet.
+How did the group evaluate their work and what was the result?
+	Around 35k data was split into 75% training and 25% test data. The FScore was nearly 89% for Positive reviews and very low around 0.01 for Negative reviews.
+
+10. Review 6
+
+The group number was: 35
+
+What was the goal of the group's project?
+	Speech Synthesis- Analyze and transform speech to text.
+
+How did the group attempt to accomplish the goal?
+	Various techniques like Sentiment analysis, HMM , Speech Synthesis Markup Language are used
+How did the group evaluate their work and what was the result?
+	The group used Database lingpipe polarity tool to evaluate 600 positive text files and 100 negative text files as training data and 100 positive text files for test data. The accuracy was around 982%.
+11. Review 7
+
+The group number was: 38
+
+What was the goal of the group's project?
+	Speech Recognition for Panda Express ordering using SRL Moedlling and CMU SPhinx and PocketSphinx. The Written sentences were to be converted into recognized sentences.
+
+How did the group attempt to accomplish the goal?
+	The group created a domain specific language model from text. This model is then interpolated.
+How did the group evaluate their work and what was the result?
+	Word Error rate is used to calculate the accuracy. the interpolated models were compared to CMU Sphinx Model and Domain Specifc models.
+12. Review 8
+
+The group number was: 45
+
+What was the goal of the group's project?
+	Grapheme to phoneme conversion. 
+
+How did the group attempt to accomplish the goal?
+	Various methods for speech synthesis and recognition were used to create models with highest accuracy. Methods like Maxent, decision trees, HMM, CRFSuite etc are used.
+
+How did the group evaluate their work and what was the result?
+	The phoneme error rate and word error rate were found. The result was that Joint Maxent 8-gram model performed the best.
+13. Review 9
+
+The group number was: 27
+
+What was the goal of the group's project?
+	Detection of textual cyberbullyism on social media.
+
+How did the group attempt to accomplish the goal?
+	Various pre-processing tasks like removal of consecutive repeated characters and special characters were performed. Naive Bayes approach and SVM are used for detecting the probabilities of Bully and Non-Bully words.
+
+How did the group evaluate their work and what was the result?
+	A 3 fold cross validation technique is used to evaluate the performance. Naive Bayes approach performs better than SVM for both balanced and Original data set. The perfomance for Bully class is always lesser than that of Non-Bully class.
+
+14. Review 10
+
+The group number was:
+
+What was the goal of the group's project?
+
+How did the group attempt to accomplish the goal?
+
+How did the group evaluate their work and what was the result?
+
